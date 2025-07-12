@@ -6,12 +6,12 @@ A Django REST Framework backend for tracking user expenses. It supports JWT auth
 
 ## ✨ Features
 
-* 🔐 JWT-based authentication (djangorestframework-simplejwt).
-* ✅ Protected routes requiring a valid token.
-* 🧾 Expense creation with rich fields (category, description, payment method).
-* 📆 Date-range filtering.
-* 📊 Analytics: total expenses, category breakdown, daily/weekly/monthly trends.
-* 📜 Interactive API docs with Swagger.
+* JWT-based authentication (djangorestframework-simplejwt).
+* Protected routes requiring a valid token.
+* Expense creation with rich fields (category, description, payment method).
+* Date-range filtering.
+* Analytics: total expenses, category breakdown, daily/weekly/monthly trends.
+* Interactive API docs with Swagger.
 
 ---
 
@@ -27,14 +27,14 @@ A Django REST Framework backend for tracking user expenses. It supports JWT auth
 
 ## 📑 Models
 
-### 🧑‍💼 User
+### User
 
 * id
 * username
 * email
 * password (managed via Django's built-in User model)
 
-### 💰 Expense
+### Expense
 
 * id
 * amount
@@ -94,7 +94,7 @@ Run this project locally in two ways:
 
 ---
 
-### ⚡ Option 1: Complete Setup (Recommended)
+### ⚡ Option 1: Complete Setup
 
 1. **Clone the repo**
 
@@ -142,7 +142,7 @@ Run this project locally in two ways:
 
 ---
 
-### ⚡ Option 2: Using Provided venv (Ultra-Minimal Setup)
+### ⚡ Option 2: Using Provided venv (Ultra-Minimal Setup)(Recommended)
 
 1. **Clone the repo**
 
@@ -213,6 +213,8 @@ Obtain JWT access and refresh tokens.
   "password": "yourpassword"
 }
 ```
+or 
+Authorize swagger - CLick on the top right Authorize button
 
 **Expected Response:**
 
