@@ -54,7 +54,7 @@ class ExpensesView(APIView):
         responses={200: ExpenseSerializer(many=True)}
     )
     
-    def get(self, request):
+    def get(self, request): # For filtering expenses, using query parameter
         start_date = request.GET.get('start_date')
         end_date = request.GET.get('end_date')
         queryset = Expense.objects.filter(user=request.user)
@@ -67,7 +67,7 @@ class ExpensesView(APIView):
 
 
 
-class AnalyticsView(APIView):
+class AnalyticsView(APIView): # Analytics with detail information like Total expenses, category wise expense etc
     permission_classes = [IsAuthenticated]
 
     def get(self, request):

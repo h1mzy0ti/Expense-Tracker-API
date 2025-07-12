@@ -1,10 +1,10 @@
-# Expense Tracker API
+# Expense Tracker API 
 
 A Django REST Framework backend for tracking user expenses. It supports JWT authentication, expense creation, filtering by date, and powerful analytics.
 
 ---
 
-## Features
+## ✨ Features
 
 * JWT-based authentication (djangorestframework-simplejwt).
 * Protected routes requiring a valid token.
@@ -140,6 +140,8 @@ If you want to set up your own virtual environment:
 7. **Access**
 
    * Swagger UI: [http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/)
+   or
+   * Url: [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/)
 
 ---
 
@@ -150,8 +152,8 @@ If you want *immediate* local running using the pushed `venv`:
 1. **Clone the repo**
 
    ```
-   git clone <your-repo-url>
-   cd <your-repo-directory>
+   git clone https://github.com/h1mzy0ti/Expense-Tracker-API.git
+   cd expense_tracker_api
    ```
 
 2. **Activate the provided virtual environment**
@@ -166,6 +168,11 @@ If you want *immediate* local running using the pushed `venv`:
    ```
    python manage.py runserver
    ```
+4. **Access**
+
+   * Swagger UI: [http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/)
+   or
+   * Url: [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/)
 
 > *Note:* Since SQLite is used, no DB setup is needed, and you can run immediately after activating venv.
 
