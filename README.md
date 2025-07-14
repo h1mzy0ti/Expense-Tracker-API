@@ -18,7 +18,7 @@ A Django REST Framework backend for tracking user expenses. It supports JWT auth
 ## ⚙️ Tech Stack
 
 * **Backend:** Django REST Framework
-* **Auth:** JWT (simplejwt)
+* **Auth:** JWT (simplejwt from DRF)
 * **Database:** SQLite (minimal setup)
 * **ORM:** Django ORM
 * **Docs:** Swagger (drf-yasg)
@@ -137,7 +137,7 @@ Run this project locally in two ways:
 
 7. **Access**
 
-   * Swagger UI: [http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/)
+   * Swagger UI: [http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/) (Recommended)
    * API Base: [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/)
 
 ---
@@ -166,7 +166,7 @@ Run this project locally in two ways:
 
 4. **Access**
 
-   * Swagger UI: [http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/)
+   * Swagger UI: [http://127.0.0.1:8000/swagger/](http://127.0.0.1:8000/swagger/) (Recommended)
    * API Base: [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/)
 
 > *Note:* Since SQLite is used, no DB setup is needed, and you can run immediately after activating venv.
@@ -215,6 +215,7 @@ Obtain JWT access and refresh tokens.
 ```
 or 
 Authorize swagger - CLick on the top right Authorize button
+JWT Authorization Example : "Bearer {your token}"
 
 **Expected Response:**
 

@@ -8,7 +8,6 @@ from drf_yasg.utils import swagger_auto_schema
 from django.db.models.functions import TruncDay, TruncWeek, TruncMonth
 from django.db.models import Sum
 
-
 from .models import *
 from .serializers import *
 
